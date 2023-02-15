@@ -1,13 +1,9 @@
-# Sample Hardhat Project
+# getBalances
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Deployed Contract using hardhat on the Goerli testnet, using the alchemy API, run the following functions to deploy and test if the Contract is working
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
+```
+npm i package.json
+npx hardhat run scripts/deploy.js --network goerli
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
 ```
