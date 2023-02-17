@@ -11,7 +11,7 @@ WITH trades_info AS
               WHEN t.denom = 'tmz' THEN 0.003
           END AS currency
    FROM trades_info t
-   INNER JOIN balance b ON t.address = b.address),
+   INNER JOIN balances b ON t.address = b.address),
      converting_currency AS
   (SELECT address,
           (amount * currency) AS base_currency
